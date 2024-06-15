@@ -1,0 +1,27 @@
+div {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 450px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 5px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.invoice {
+  background-color: green;
+}
+
+.withdrawal {
+  background-color: gray;
+}

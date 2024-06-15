@@ -1,0 +1,18 @@
+<div
+  *ngFor="let t of todos"
+  [ngClass]="{
+    invoice: t.type == 'invoice',
+    withdrawal: t.type == 'withdrawal'
+  }"
+>
+  <ul>
+    <li [ngClass]="{ yellow: t.amount > 700 }">
+      Amount: {{ t.amount | currency : "EUR" }}
+    </li>
+    <li>Date: {{ t.date | date : "gg/MM/aaaa" }}</li>
+    <li>Business: {{ t.business }}</li>
+    <li>Name: {{ t.name }}</li>
+    <li>Type: {{ t.type }}</li>
+    <li>Account: {{ t.account }}</li>
+  </ul>
+</div>
